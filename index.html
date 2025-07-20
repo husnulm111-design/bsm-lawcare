@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BINA SATRIA MUDA - Advokat Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    .logo-animate { animation: spin 12s linear infinite; }
+    @keyframes spin {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+<!-- Header -->
+<header class="bg-blue-900 text-white px-6 py-4 flex justify-between items-center">
+  <div class="flex items-center space-x-4">
+    <img src="lv_0_20250715214322.gif" class="w-12 h-12 logo-animate" alt="Logo Animasi">
+    <h1 class="text-xl font-bold">BINA SATRIA MUDA</h1>
+  </div>
+  <nav class="space-x-4 text-sm">
+    <a href="#beranda" class="hover:underline">Beranda</a>
+    <a href="#profil" class="hover:underline">Profil</a>
+    <a href="#insight" class="hover:underline">Artikel</a>
+    <a href="#blog" class="hover:underline">Blog</a>
+    <a href="#galeri" class="hover:underline">Galeri</a>
+    <a href="#formulir" class="hover:underline">Konsultasi</a>
+    <a href="#upload" class="hover:underline">Upload Dokumen</a>
+    <a href="#video" class="hover:underline">Video</a>
+    <a href="#kontak" class="hover:underline">Kontak</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="beranda" class="text-center py-12 bg-white shadow">
+  <h2 class="text-3xl font-bold mb-2">Mitra Hukum Tepercaya Anda</h2>
+  <p class="text-gray-600 max-w-2xl mx-auto">Kantor Hukum Bina Satria Muda siap mendampingi Anda menyelesaikan permasalahan hukum secara profesional dan solutif.</p>
+</section>
+
+<!-- Artikel & Insight -->
+<section id="insight" class="max-w-6xl mx-auto py-12 px-6">
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold">Artikel & Insight Hukum</h2>
+    <select onchange="filterInsight(this.value)" class="p-2 border rounded text-sm">
+      <option value="all">Semua Kategori</option>
+      <option value="pidana">Pidana</option>
+      <option value="perdata">Perdata</option>
+      <option value="keluarga">Keluarga</option>
+    </select>
+  </div>
+  <div id="insightList" class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white shadow p-4 rounded" data-category="pidana">
+      <h3 class="font-semibold text-lg">Strategi Menang Kasus Pidana 2025</h3>
+      <p class="text-sm text-gray-600 mt-2">Tips dan pendekatan terkini dalam menghadapi perkara pidana berat.</p>
+    </div>
+    <div class="bg-white shadow p-4 rounded" data-category="perdata">
+      <h3 class="font-semibold text-lg">Kontrak Perdata yang Sah dan Kuat</h3>
+      <p class="text-sm text-gray-600 mt-2">Dasar hukum pembuatan kontrak usaha yang melindungi semua pihak.</p>
+    </div>
+    <div class="bg-white shadow p-4 rounded" data-category="keluarga">
+      <h3 class="font-semibold text-lg">Perceraian Tanpa Konflik</h3>
+      <p class="text-sm text-gray-600 mt-2">Bagaimana menyelesaikan perceraian secara elegan dan damai.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="max-w-6xl mx-auto py-12 px-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Blog Hukum</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-semibold text-lg">Cara Menghadapi Pemanggilan Polisi</h3>
+      <p class="text-sm text-gray-600 mt-2">Langkah hukum yang harus diambil jika Anda dipanggil sebagai saksi atau tersangka.</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-semibold text-lg">Mengurus Surat Kuasa</h3>
+      <p class="text-sm text-gray-600 mt-2">Tips praktis menyusun surat kuasa hukum untuk perdata dan pidana.</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-semibold text-lg">Kiat Menghindari Penipuan Online</h3>
+      <p class="text-sm text-gray-600 mt-2">Kenali modus dan cara hukum menindak kasus penipuan online.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="max-w-6xl mx-auto py-12 px-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Galeri Kegiatan</h2>
+  <div class="grid md:grid-cols-3 gap-4">
+    <img src="galeri1.jpg" alt="Kegiatan 1" class="rounded shadow">
+    <img src="galeri2.jpg" alt="Kegiatan 2" class="rounded shadow">
+    <img src="galeri3.jpg" alt="Kegiatan 3" class="rounded shadow">
+  </div>
+</section>
+
+<!-- Formulir Konsultasi -->
+<section id="formulir" class="max-w-xl mx-auto bg-white p-6 rounded shadow my-12">
+  <h2 class="text-xl font-bold text-center mb-4">Form Konsultasi Online</h2>
+  <form action="https://formsubmit.io/send/bsm.bismill4h@gmail.com" method="POST" onsubmit="return validateForm()">
+    <input type="hidden" name="_redirect" value="https://bsmbismill4h-wq.github.io/bsm-lawcare/terima-kasih.html">
+    <input type="text" name="nama" placeholder="Nama Lengkap" required class="w-full mb-3 p-2 border rounded">
+    <input type="email" name="email" placeholder="Email Aktif" required class="w-full mb-3 p-2 border rounded">
+    <input type="text" name="wa" id="wa" placeholder="Nomor WhatsApp" required class="w-full mb-3 p-2 border rounded">
+    <textarea name="pesan" rows="5" placeholder="Deskripsikan masalah hukum Anda..." required class="w-full p-2 border rounded"></textarea>
+    <button type="submit" class="w-full bg-blue-700 text-white py-2 mt-3 rounded hover:bg-blue-800">Kirim Konsultasi</button>
+  </form>
+</section>
+
+<!-- Upload Dokumen -->
+<section id="upload" class="max-w-xl mx-auto bg-white p-6 rounded shadow my-12">
+  <h2 class="text-xl font-bold text-center mb-4">Upload Dokumen Pendukung</h2>
+  <form action="https://formsubmit.io/send/bsm.bismill4h@gmail.com" method="POST" enctype="multipart/form-data">
+    <input type="file" name="dokumen" required accept=".pdf,.jpg,.png,.doc,.docx" class="w-full mb-4 p-2 border rounded">
+    <input type="hidden" name="_redirect" value="https://bsmbismill4h-wq.github.io/bsm-lawcare/terima-kasih.html">
+    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Upload</button>
+  </form>
+</section>
+
+<!-- Video Edukasi -->
+<section id="video" class="max-w-4xl mx-auto py-12 px-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Video Edukasi Hukum</h2>
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-64 rounded shadow" src="https://www.youtube.com/embed/G5oQ9IkAbUE" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Profil Pengacara -->
+<section id="profil" class="bg-white py-12 px-6">
+  <h2 class="text-2xl font-bold text-center mb-8">Tim Pengacara</h2>
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="text-center bg-gray-100 p-4 rounded shadow">
+      <img src="Muhammad Husnul Yakin. S.H. - Advokat.jpg" class="w-24 h-24 mx-auto rounded-full">
+      <h4 class="mt-4 font-semibold">Muhammad Husnul Yakin, S.H.</h4>
+      <p class="text-sm text-gray-600">Ahli Hukum Pidana & Mediasi</p>
+    </div>
+    <div class="text-center bg-gray-100 p-4 rounded shadow">
+      <img src="SAIDIL ALIM, S.H. - Advokat.jpg" class="w-24 h-24 mx-auto rounded-full">
+      <h4 class="mt-4 font-semibold">Saidil Alim, S.H.</h4>
+      <p class="text-sm text-gray-600">Spesialis Keluarga & Perceraian</p>
+    </div>
+    <div class="text-center bg-gray-100 p-4 rounded shadow">
+      <img src="Yusuf, S.H., M.Kn. - Advokat.jpg" class="w-24 h-24 mx-auto rounded-full">
+      <h4 class="mt-4 font-semibold">Yusuf, S.H., M.Kn.</h4>
+      <p class="text-sm text-gray-600">Hukum Perdata & Perusahaan</p>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="bg-white py-12 px-6 text-center">
+  <h2 class="text-2xl font-bold mb-6">Lokasi Kantor Hukum BINA SATRIA MUDA</h2>
+  <div class="space-y-6 text-left max-w-4xl mx-auto text-gray-800">
+    <div class="bg-gray-100 p-4 rounded shadow">
+      <p class="font-semibold">🏢 Kantor Pusat - Semampir, Sedati</p>
+      <p>📍 Jl. Ngemplak Barongan No.117, Semampir Timur, Sedati, Sidoarjo</p>
+      <p>🌐 Koordinat: -7.3721964, 112.7755155</p>
+    </div>
+    <div class="bg-gray-100 p-4 rounded shadow">
+      <p class="font-semibold">🏢 Cabang - Gemurung, Gedangan</p>
+      <p>📍 Jl. Jamrud II, Perum Permata Alam, Gemurung, Gedangan, Sidoarjo</p>
+      <p>🌐 Koordinat: -7.4013930, 112.7454892</p>
+    </div>
+    <div class="bg-gray-100 p-4 rounded shadow">
+      <p class="font-semibold">🏢 Cabang - Bligo, Candi</p>
+      <p>📍 Jl. Anggrek No.17, Bligo, Candi, Sidoarjo</p>
+      <p>🌐 Koordinat: -7.4733294, 112.7172640</p>
+    </div>
+    <div class="bg-gray-100 p-4 rounded shadow">
+      <p class="font-semibold">🏢 Cabang - Pepe Indah, Sedati</p>
+      <p>📍 Jl. Jayengrono Blok A-46, Kapling Pepe Indah, Sedati</p>
+      <p>🌐 Koordinat: -7.4018375, 112.7643310</p>
+    </div>
+  </div>
+  <div class="mt-6">
+    <p>☎️ <a href="tel:+6285850473256" class="text-blue-700">0858-5047-3256</a></p>
+    <p>📧 <a href="mailto:bsm.bismill4h@gmail.com" class="text-blue-700">bsm.bismill4h@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/6285850473256" target="_blank"
+   class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg z-50">
+   💬 Konsultasi WhatsApp
+</a>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white text-center py-6 mt-12">
+  &copy; 2025 Bina Satria Muda. All rights reserved.
+</footer>
+
+<!-- Script -->
+<script>
+function validateForm() {
+  const wa = document.getElementById("wa").value;
+  if (!/^[0-9]{10,15}$/.test(wa)) {
+    alert("Nomor WhatsApp harus 10-15 digit angka.");
+    return false;
+  }
+  return true;
+}
+
+function filterInsight(kategori) {
+  const cards = document.querySelectorAll("#insightList > div");
+  cards.forEach(card => {
+    const show = kategori === "all" || card.dataset.category === kategori;
+    card.style.display = show ? "block" : "none";
+  });
+}
+</script>
+
+</body>
+</html>
